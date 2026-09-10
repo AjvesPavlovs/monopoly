@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #18122B;
+  color: white;
+}
+
+.game-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel, .right-panel {
+  width: 20%;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #1F1D36;
+}
+
+.board {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-grid {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  gap: 2px;
+  background-color: #333;
+}
+
+.tile {
+  background-color: #312E81;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #444;
+  font-size: 12px;
+  text-align: center;
+  padding: 4px;
+}
+
+.center {
+  grid-column: 2 / 11;
+  grid-row: 2 / 11;
+  background-color: #1E1E2F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dice {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #6D28D9;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.chat-box, .share-box {
+  margin-bottom: 20px;
+}
+
+.chat-box input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.player-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #9333EA;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.settings label {
+  display: block;
+  margin-bottom: 10px;
+}
